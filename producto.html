@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Batidora de Mano - The Kitchen Pro</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/fc87c0f582.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-warning">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1 style="font-size: 1.5rem !important;" class="m-0">The Kitchen Pro</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#introduccion">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#informacion">Información</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <!-- Galería de imágenes -->
+            <div  class="col-12 col-md-6">
+                <div class="product-main-image">
+                    <img id="mainImage" class="img-thumbnail" src="img/producto/producto1.webp" alt="Imagen principal del producto">
+                </div>
+                <div class="d-flex flex-wrap galeria-productos">
+                    <img src="img/producto/producto1.webp" alt="batidora de mano" class="img-thumbnail active" onclick="changeImage(this)">
+                    <img src="img/producto/producto2.webp" alt="batidora de mano batiendo" class="img-thumbnail" onclick="changeImage(this)">
+                    <img src="img/producto/producto3.webp" alt="medidas de batidora de mano" class="img-thumbnail" onclick="changeImage(this)">
+                    <img src="img/producto/producto4.webp" alt="Velocidades de batidora de mano" class="img-thumbnail" onclick="changeImage(this)">
+                </div>
+            </div>
+            <!-- Detalles del producto -->
+            <div class="col-12 col-md-6">
+                <h2>Batidora de Mano</h2>
+                <p class="text-muted" title="Stock Keeping Unit">SKU: 123456789</p>
+                <p>
+                    <!-- copiado de un radom de mercado libre -->
+                    BATIDORA ELECTRICA DE MANO
+
+                    Diseño elegante y funcional con mango ergonómico. Cuenta con 7 Velocidades.
+                    Ideal para preparar pasteles, cupcakes, hotcakes, salsas, merengues, galletas, batir huevos, etc. Cuenta con aspas para batir y aspas para amasar.
+                    Mezcla ingredientes para una variedad de recetas, hacen la preparación fácil y ahorran tiempo valioso en la cocina.
+                    Con Botón de Expulsión.
+                    <!-- fin del copiado -->
+                </p>
+                <p class="fw-bold text-success">$34.190,00</p>
+
+                <h3>Facilidades de pago:</h3>
+                <ul>
+                    <li>Pago a meses sin intereses (6, 12 y 18 meses).</li>
+                    <li>Transferencia bancaria.</li>
+                    <li>Pago con tarjeta de crédito y débito.</li>
+                </ul>
+                <button class="btn btn-outline-warning w-100">
+                    <span>Comprar ahora</span>
+                </button>
+            </div>
+        </div>
+        <section class="mt-5">
+            <h3>Datos Técnicos</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><span class="fw-bold">Material:</span> Acero inoxidable.</li>
+                <li class="list-group-item"><span class="fw-bold">Voltaje:</span> 220-240V.</li>
+                <li class="list-group-item"><span class="fw-bold">Potencia:</span> 180W.</li>
+                <li class="list-group-item"><span class="fw-bold">Frecuencia:</span> 50-60 Hz.</li>
+                <li class="list-group-item"><span class="fw-bold">Longitud del cable:</span> 100 cm.</li>
+                <li class="list-group-item"><span class="fw-bold">Tamaño del producto:</span> 18 cm x 12.5 cm x 7 cm.</li>
+                <li class="list-group-item"><span class="fw-bold">Peso del producto:</span> 450 gr.</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="py-2">
+        <div class="container py-2 border-top d-flex flex-wrap" style="gap: 1rem">
+            <img src="img/dni0.png" alt="foto del alumno">
+            <ul class="list-unstyled">
+                <li>Arroyo Alan Lautaro</li>
+                <li>19/07/2002</li>
+                <li>
+                    <a href="mailto:Launick99@gmail.com">Launick99@gmail.com</a>
+                    |
+                    <a href="mailto:alan.arroyo@davinci.edu.ar">alan.arroyo@davinci.edu.ar</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- trucazo -->
+    <script>
+        function changeImage(element) {
+            document.getElementById('mainImage').src = element.src;
+            document.querySelectorAll('.galeria-productos .img-thumbnail').forEach(item => {
+                item.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

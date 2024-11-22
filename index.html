@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <title>The Kitchen Pro</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/fc87c0f582.js" crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column" style="min-height: 100vh;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-warning">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1 style="font-size: 1.5rem !important;" class="m-0">The Kitchen Pro</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#introduccion">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#informacion">Información</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1">
+        <div class="w-100">
+            <div id="indicadores" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source srcset="img/banner/m_banner_descuento.png" class="w-100" media="(max-width: 576px)">
+                            <img src="img/banner/banner_descuento.png" class="w-100" alt="Descuento en Cuchillos y Cubiertos">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source srcset="img/banner/m_banner_descuento.png" class="w-100" media="(max-width: 576px)">
+                            <img src="img/banner/banner_descuento.png" class="w-100" alt="Descuento en Cuchillos y Cubiertos">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source srcset="img/banner/m_banner_descuento.png" class="w-100" media="(max-width: 576px)">
+                            <img src="img/banner/banner_descuento.png" class="w-100" alt="Descuento en Cuchillos y Cubiertos">
+                        </picture>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#indicadores" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                    </span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#indicadores" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" 
+                        aria-hidden="true">
+                    </span>
+                </button>
+            </div>
+        </div>
+        <section class="container" id="introduccion">
+            <h2 class="text-center mb-4">Nosotros</h2>
+            <p>
+                En <strong>The Kitchen</strong>, estamos dedicados a proporcionarte los mejores productos para que 
+                tu experiencia en la cocina sea tanto eficiente como placentera. Desde utensilios básicos hasta los 
+                electrodomésticos más avanzados, nuestro objetivo es ofrecerte una variedad de productos de alta calidad 
+                que se adapten a tus necesidades. Fundada con la pasión por el arte culinario, nuestra empresa ha trabajado 
+                incansablemente para reunir lo mejor en herramientas de cocina, siempre pensando en nuestros clientes.
+            </p>
+            <p>
+                Nos guía la filosofía de que cocinar debe ser accesible y divertido para todos. Por eso, no solo buscamos 
+                ofrecer productos de calidad, sino también inspiración para ayudarte a crear recetas que sorprendan. 
+                Con nuestros productos, podrás explorar tu creatividad en la cocina y disfrutar cada paso del proceso. 
+                Nuestro compromiso es brindarte una experiencia de compra confiable y satisfactoria, asegurando que encuentres 
+                en nuestra tienda todos los artículos que necesitas para convertir tu cocina en el corazón de tu hogar.
+            </p>
+        </section>
+        <section class="container my-2" id="productos">
+            <h2 class="h4">Pensados para vos!</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4">
+                    <div class="card border-0 m-auto p-2 h-100 d-flex" style="max-width: 400px;">
+                        <img draggable="false" class="img w-100 h-auto" alt="Batidora de Mano" src="img/producto1.png">
+                        <h3 class="h5">Batidora de Mano</h3>
+                        <p class="text-muted">Ideal para preparar tus mezclas y batidos favoritos con facilidad. Potente y ergonómica.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-end" style="font-size: 1.3rem;">$ 34.190,00</p>
+                            <a href="producto.html" class="btn btn-sm w-100 btn-outline-warning">
+                                <span>Comprar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4">
+                    <div class="card border-0 m-auto p-2 h-100 d-flex" style="max-width: 400px;">
+                        <img draggable="false" class="img w-100 h-auto" alt="Set de Sartenes Antiadherentes" src="img/producto2.png">
+                        <h3 class="h5">Set de Sartenes Antiadherentes</h3>
+                        <p class="text-muted">Sartenes de alta calidad con recubrimiento antiadherente. Perfectos para cocinar sin usar mucho aceite.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-end" style="font-size: 1.3rem;">$ 45.839,00</p>
+                            <a href="producto.html" class="btn btn-sm w-100 btn-outline-warning">
+                                <span>Comprar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4">
+                    <div class="card border-0 m-auto p-2 h-100 d-flex" style="max-width: 400px;">
+                        <img draggable="false" class="img w-100 h-auto" alt="Tostadora de Pan" src="img/producto3.png">
+                        <h3 class="h5">Tostadora de Pan</h3>
+                        <p class="text-muted">Tostadora con varias configuraciones para lograr el tostado perfecto. Fácil de limpiar y usar.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-end" style="font-size: 1.3rem;">$ 39.523,00</p>
+                            <a href="producto.html" class="btn btn-sm w-100 btn-outline-warning">
+                                <span>Comprar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4">
+                    <div class="card border-0 m-auto p-2 h-100 d-flex" style="max-width: 400px;">
+                        <img draggable="false" class="img w-100 h-auto" alt="Juego de Cuchillos de Cocina" src="img/producto4.png">
+                        <h3 class="h5">Juego de Cuchillos de Cocina</h3>
+                        <p class="text-muted">Conjunto de cuchillos de acero inoxidable para cortar, picar y rebanar con precisión.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-end" style="font-size: 1.3rem;">$ 134.049,50</p>
+                            <a href="producto.html" class="btn btn-sm w-100 btn-outline-warning">
+                                <span>Comprar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4">
+                    <div class="card border-0 m-auto p-2 h-100 d-flex" style="max-width: 400px;">
+                        <img draggable="false" class="img w-100 h-auto" alt="Cafetera de Goteo" src="img/producto5.png">
+                        <h3 class="h5">Cafetera de Goteo</h3>
+                        <p class="text-muted">Disfruta del aroma del café recién hecho cada mañana con esta cafetera de alta calidad.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-end" style="font-size: 1.3rem;">$ 82.199,00</p>
+                            <a href="producto.html" class="btn btn-sm w-100 btn-outline-warning">
+                                <span>Comprar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4">
+                    <div class="card border-0 m-auto p-2 h-100 d-flex" style="max-width: 400px;">
+                        <img draggable="false" class="img w-100 h-auto" alt="Freidora de Aire" src="img/producto6.png">
+                        <h3 class="h5">Freidora de Aire</h3>
+                        <p class="text-muted">Freidora sin aceite para preparar platillos más saludables, conservando el sabor crujiente.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-end" style="font-size: 1.3rem;">$ 96.599,00</p>
+                            <a href="producto.html" class="btn btn-sm w-100 btn-outline-warning">
+                                <span>Comprar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 7 -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4">
+                    <div class="card border-0 m-auto p-2 h-100 d-flex" style="max-width: 400px;">
+                        <img draggable="false" class="img w-100 h-auto" alt="Licuadora de Alta Potencia" src="img/producto7.png">
+                        <h3 class="h5">Licuadora de Alta Potencia</h3>
+                        <p class="text-muted">Licuadora ideal para preparar smoothies, salsas y sopas en pocos minutos.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-end" style="font-size: 1.3rem;">$ 249.999,99</p>
+                            <a href="producto.html" class="btn btn-sm w-100 btn-outline-warning">
+                                <span>Comprar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 8 -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4">
+                    <div class="card border-0 m-auto p-2 h-100 d-flex" style="max-width: 400px;">
+                        <img draggable="false" class="img w-100 h-auto" alt="Olla a Presión" src="img/producto8.png">
+                        <h3 class="h5">Olla a Presión</h3>
+                        <p class="text-muted">Perfecta para cocinar platillos en menos tiempo, conservando todos los nutrientes.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-end" style="font-size: 1.3rem;">$ 85.115.00</p>
+                            <a href="producto.html" class="btn btn-sm w-100 btn-outline-warning">
+                                <span>Comprar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 9 -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4">
+                    <div class="card border-0 m-auto p-2 h-100 d-flex" style="max-width: 400px;">
+                        <img draggable="false" class="img w-100 h-auto" alt="Procesador de Alimentos" src="img/producto9.png">
+                        <h3 class="h5">Procesador de Alimentos</h3>
+                        <p class="text-muted">Corta, mezcla y pica con facilidad. Un accesorio esencial para cualquier cocina.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-end" style="font-size: 1.3rem;">$ 107.750,00</p>
+                            <a href="producto.html" class="btn btn-sm w-100 btn-outline-warning">
+                                <span>Comprar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mb-2" id="informacion">
+            <h2>Compromiso</h2>
+            <img src="img/banner/banner_secundario.png" class="img-fluid" style="min-height: 250px; object-fit: cover;" alt="Descuentos">
+            <div class="row">
+                <!-- https://www.svgrepo.com/ -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 text-center h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h2 class="h4">¡Envío gratis para tus compras!</h2>
+                            <p class="text-muted mt-4">
+                                Disfruta de envío gratuito en pedidos mayores a $40,000. ¡Llévate todo lo que necesitas!
+                            </p>
+                            <div class="mt-auto">
+                                <svg fill="#000000" height="120px" width="120px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.00 512.00" xml:space="preserve" stroke="#000000" stroke-width="0.00512"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <path d="M167.882,421.108c-14.575,0-26.432,11.857-26.432,26.432c0,14.575,11.857,26.431,26.432,26.431 c14.575,0,26.431-11.857,26.431-26.431C194.314,432.964,182.457,421.108,167.882,421.108z M167.882,453.572 c-3.327,0-6.034-2.706-6.034-6.033s2.707-6.034,6.034-6.034c3.327,0,6.033,2.707,6.033,6.034S171.209,453.572,167.882,453.572z"></path> </g> </g> <g> <g> <path d="M430.843,435.949h-7.424V86.259c0-5.633-4.566-10.199-10.199-10.199H248.116c-5.633,0-10.199,4.566-10.199,10.199v349.69 h-6.638c-5.477-30.028-31.811-52.871-63.396-52.871c-35.544,0-64.461,28.918-64.461,64.461S132.338,512,167.882,512 c32.555,0,59.534-24.263,63.844-55.653h199.117c5.633,0,10.199-4.566,10.199-10.199S436.476,435.949,430.843,435.949z M167.882,491.602c-24.297,0-44.063-19.766-44.063-44.063c0-24.297,19.766-44.063,44.063-44.063 c24.295,0,44.063,19.766,44.063,44.063C211.945,471.836,192.178,491.602,167.882,491.602z M403.02,435.949H258.315v-69.574H403.02 V435.949z M403.02,345.976H258.315v-69.574H403.02V345.976z M403.02,256.004H258.315V186.43H403.02V256.004z M403.02,166.032 H258.315V96.458H403.02V166.032z"></path> </g> </g> <g> <g> <path d="M124.287,0c-29.406,0-53.33,23.924-53.33,53.331v25.508c0,5.633,4.566,10.199,10.199,10.199 c5.633,0,10.199-4.566,10.199-10.199V53.331c0-18.159,14.773-32.932,32.931-32.932c18.159,0,32.932,14.774,32.932,32.932v272.024 c0,5.633,4.566,10.199,10.199,10.199c5.633,0,10.199-4.566,10.199-10.199V53.331C177.618,23.924,153.693,0,124.287,0z"></path> </g> </g> <g> <g> <path d="M167.418,347.793c-5.633,0-10.199,4.566-10.199,10.199v4.08c0,5.633,4.566,10.199,10.199,10.199 c5.633,0,10.199-4.566,10.199-10.199v-4.08C177.618,352.359,173.051,347.793,167.418,347.793z"></path> </g> </g> <g> <g> <path d="M361.277,374.73h-63.073c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h63.073 c5.633,0,10.199-4.566,10.199-10.199C371.476,379.296,366.91,374.73,361.277,374.73z"></path> </g> </g> <g> <g> <path d="M361.277,284.758h-63.073c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h63.073 c5.633,0,10.199-4.566,10.199-10.199C371.476,289.324,366.91,284.758,361.277,284.758z"></path> </g> </g> <g> <g> <path d="M361.276,194.785h-63.073c-5.633,0-10.199,4.566-10.199,10.199s4.566,10.199,10.199,10.199h63.073 c5.633,0,10.199-4.566,10.199-10.199S366.909,194.785,361.276,194.785z"></path> </g> </g> <g> <g> <path d="M361.277,104.813h-63.073c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h63.073 c5.633,0,10.199-4.566,10.199-10.199C371.476,109.379,366.91,104.813,361.277,104.813z"></path> </g> </g> </g></svg>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 text-center h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h2 class="h4">Recibí tus productos en menos de 48 hs</h2>
+                            <p class="text-muted mt-4">
+                                Tus paquetes están seguros. ¡Tenés el respaldo de los envíos con Mercado Libre!
+                            </p>
+                            <div class="mt-auto">
+                                <svg fill="#000000" width="120px" height="120px" viewBox="0 0 512.00 512.00" enable-background="new 0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00512"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g></g> <g id="Layer_2"> <g> <path d="M410.9,186.6c0-0.1,0-0.2-0.1-0.2c0-0.2-0.1-0.3-0.1-0.5c0-0.1-0.1-0.3-0.1-0.4c0-0.1-0.1-0.2-0.1-0.3 c-0.2-0.5-0.4-0.9-0.7-1.3c0,0,0,0,0,0l-65-95.5c-1.4-2.1-3.7-3.3-6.2-3.3h-63.6h-37.9h-63.6c-2.5,0-4.8,1.2-6.2,3.3l-65,95.5 c0,0,0,0,0,0c-0.3,0.4-0.5,0.9-0.7,1.3c0,0.1-0.1,0.2-0.1,0.3c-0.1,0.1-0.1,0.3-0.1,0.4c0,0.2-0.1,0.3-0.1,0.5 c0,0.1,0,0.2-0.1,0.2c-0.1,0.5-0.2,1-0.2,1.5c0,0,0,0,0,0v231.3c0,4.1,3.4,7.5,7.5,7.5h295.1c4.1,0,7.5-3.4,7.5-7.5V188.1 c0,0,0,0,0,0C411,187.6,411,187.1,410.9,186.6z M389.3,180.6h-96.9l-9.1-80.5h51.2L389.3,180.6z M233.7,195.6h44.5v55L260.3,238 c-1.3-0.9-2.8-1.4-4.3-1.4s-3,0.5-4.3,1.4l-17.9,12.6V195.6z M268.2,100.1l9.1,80.5h-42.7l9.1-80.5H268.2z M177.5,100.1h51.2 l-9.1,80.5h-96.9L177.5,100.1z M396,411.9H116V195.6h102.8v69.4c0,2.8,1.6,5.4,4,6.7c2.5,1.3,5.5,1.1,7.8-0.5l25.4-17.9l25.4,17.9 c1.3,0.9,2.8,1.4,4.3,1.4c1.2,0,2.4-0.3,3.5-0.8c2.5-1.3,4-3.9,4-6.7v-69.4H396V411.9z"></path> <path d="M201,330.4h-53.2c-4.1,0-7.5,3.4-7.5,7.5s3.4,7.5,7.5,7.5H201c4.1,0,7.5-3.4,7.5-7.5S205.1,330.4,201,330.4z"></path> <path d="M174.4,361.9h-26.6c-4.1,0-7.5,3.4-7.5,7.5s3.4,7.5,7.5,7.5h26.6c4.1,0,7.5-3.4,7.5-7.5S178.5,361.9,174.4,361.9z"></path> </g> </g> </g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 text-center h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h2 class="h4">Paga a tu manera, sin preocupaciones</h2>
+                            <p class="text-muted mt-4">
+                                Pagá con tarjeta o en efectivo. Tu dinero está protegido con Mercado Pago.
+                            </p>
+                            <div class="mt-auto">
+                                <svg width="120px" height="120px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.72"></g><g> <path d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12Z" stroke="#000000" stroke-width="0.72"></path> <path d="M10 16.5H6" stroke="#000000" stroke-width="0.72" stroke-linecap="round"></path> <path d="M8 13.5H6" stroke="#000000" stroke-width="0.72" stroke-linecap="round"></path> <path d="M2 10L22 10" stroke="#000000" stroke-width="0.72" stroke-linecap="round"></path> <path d="M14 15C14 14.0572 14 13.5858 14.2929 13.2929C14.5858 13 15.0572 13 16 13C16.9428 13 17.4142 13 17.7071 13.2929C18 13.5858 18 14.0572 18 15C18 15.9428 18 16.4142 17.7071 16.7071C17.4142 17 16.9428 17 16 17C15.0572 17 14.5858 17 14.2929 16.7071C14 16.4142 14 15.9428 14 15Z" stroke="#000000" stroke-width="0.72"></path> </g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mb-2" id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <!-- Nombre y apellido -->
+                <div class="row">
+                    <div class="col-12 col-sm-6 mb-2">
+                        <label class="form-label" for="nombre">Nombres</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: Marcos Eduardo" required>
+                    </div>
+                    <div class="col col-sm-6 mb-2">
+                        <label class="form-label" for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ej: Galperín Lebach" required>
+                    </div>
+                </div>
+                <!-- Mail -->
+                <div class="mb-2">
+                    <label class="form-label" for="mail">Email</label>
+                    <input type="email" id="mail" name="mail" class="form-control" placeholder="Ej: MarcosEdu@gmail.com" required>
+                </div>
+                <!-- Telefono -->
+                <div class="mb-2">
+                    <label class="form-label" for="cel">Telefono</label>    
+                    <input type="number" id="cel" name="cel" placeholder="Ej: 5491187651234" class="form-control">
+                </div>
+                <!-- Comentario -->
+                <div class="mb-2">
+                    <label class="form-label" for="comentario">Comentario</label>
+                    <textarea class="form-control" id="comentario" name="comentario" style="resize: none;" rows="4"></textarea>
+                </div>
+              
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <button type="submit" class="btn btn-outline-warning w-100 mb-4">
+                            <span>Enviar!</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="py-2">
+        <div class="container py-2 border-top d-flex flex-wrap" style="gap: 1rem">
+            <img src="img/dni0.png" alt="foto del alumno">
+            <ul class="list-unstyled">
+                <li>Arroyo Alan Lautaro</li>
+                <li>19/07/2002</li>
+                <li>
+                    <a href="mailto:Launick99@gmail.com">Launick99@gmail.com</a>
+                    |
+                    <a href="mailto:alan.arroyo@davinci.edu.ar">alan.arroyo@davinci.edu.ar</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
